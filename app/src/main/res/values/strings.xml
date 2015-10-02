@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SimpleRV</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    //
+    <string name="size_template">Size: %d</string>
+    <string name="icon">Icon</string>
+
+</resources>
