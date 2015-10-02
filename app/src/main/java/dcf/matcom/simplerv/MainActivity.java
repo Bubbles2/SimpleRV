@@ -1,5 +1,6 @@
 package dcf.matcom.simplerv;
 
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -25,6 +26,11 @@ public class MainActivity extends RecyclerViewActivity {
         setContentView(R.layout.activity_main);
         //
         setLayoutManager(new LinearLayoutManager(this));
+        // Add decoration
+        Drawable divider=getResources().getDrawable(R.drawable.item_divider);
+        getRecyclerView().addItemDecoration(new
+                HorizontalDividerItemDecoration(divider));
+        //
         setAdapter(new RecViewAdapter());
     }
 
